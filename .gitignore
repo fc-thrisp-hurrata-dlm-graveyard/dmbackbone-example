@@ -3,4 +3,3 @@ db/*.db
 db/*.sqlite3
 log/*.log
 tmp/
-vendor/
