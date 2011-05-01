@@ -1,0 +1,9 @@
+!!!
+%html
+  %head
+    %title Documents - DataMapper
+    = include_stylesheets :common, :workspace, :media => 'all'
+    = include_javascripts :workspace
+    = csrf_meta_tag
+  %body
+    = yield

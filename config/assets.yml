@@ -1,0 +1,27 @@
+embed_assets: on
+package_assets: off
+
+javascripts:
+  workspace:
+    - public/javascripts/vendor/jquery-1.5.2.min.js
+    - public/javascripts/vendor/underscore.js
+    - public/javascripts/vendor/backbone.js
+    - public/javascripts/application.js
+    - public/javascripts/models/*.js
+    - public/javascripts/collections/*.js
+    - public/javascripts/controllers/*.js
+    - app/views/**/*.jst
+    - public/javascripts/views/**/*.jst
+    - public/javascripts/views/*.js
+
+stylesheets:
+  common:
+    - public/stylesheets/*.css
+
+  workspace:
+    - public/stylesheets/*.css
+
+  empty:
+    - public/stylesheets/*.css
+
+
