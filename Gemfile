@@ -36,7 +36,7 @@ gem 'dm-timestamps',        DM_VERSION
 gem 'dm-observer',          DM_VERSION
 
 #gem 'dm-is-tree',           DM_VERSION
-#gem 'dm-serializer',        DM_VERSION
+gem 'dm-serializer',        DM_VERSION
 
 
 gem 'haml'
