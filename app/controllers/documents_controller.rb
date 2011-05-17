@@ -1,30 +1,30 @@
 class DocumentsController < ApplicationController
+  respond_to :json
 
   def index
-    @documentz = Document.all
-    respond_to do |format|
-        format.json {render :json => @documentz }
-    end
-    #render :json => Document.all
+    @documents = Document.all
+    respond_with(@documents)
   end
 
   def show
-    @document = Document.find(params[:id])
-    respond_to do |format|
-        format.json {render :json => @document }
-    end
-    #render :json => Document.find(params[:id])
+    @document = Document.first(:id=>params[:id])
+    respond_with(@document)
   end
 
-  def create
-    #@document = Document.create(params)  
+  def create 
     document = Document.create! params
-    render :json => document
+
+    if document.save
+      respond_with document
+    end
   end
 
   def update
-    document = Document.find(params[:id])
-    document.update_attributes! params
-    render :json => document
+    document = Document.first(:id=>params[:id])
+    document.update! params
+    if document.update
+      respond_with document
+    end
   end
+
 end

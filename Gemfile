@@ -45,6 +45,8 @@ gem 'haml-rails'
 gem 'jammit'
 
 
+gem 'thin'
+
 group(:development, :test) do
 
   # Uncomment this if you want to use rspec for testing your application
@@ -66,4 +68,3 @@ group(:development, :test) do
   # gem 'rails_metrics', '~> 0.1', :git => 'git://github.com/engineyard/rails_metrics'
 
 end
-
